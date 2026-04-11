@@ -5,7 +5,7 @@ body {
   background: #1f3d2e;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   overflow-y: auto;
   position: relative;
@@ -38,7 +38,7 @@ body::before {
 }
 
 .logo-wrap {
-  margin-top: 1.25rem;
+  margin-top: 2.5rem;
   margin-bottom: 1.25rem;
 }
 .logo-wrap img {
@@ -168,4 +168,10 @@ body::before {
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+  }
 }
