@@ -7,7 +7,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-y: auto;
   position: relative;
 }
 
@@ -38,11 +38,12 @@ body::before {
 }
 
 .logo-wrap {
-  margin-bottom: 2.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 .logo-wrap img {
-  width: 200px;
-  height: 200px;
+  width: clamp(200px, 40vw, 350px);
+  height: clamp(200px, 40vw, 350px);
   object-fit: contain;
   filter: drop-shadow(0 8px 32px rgba(0,0,0,0.4));
   animation: fadeUp 1s 0.1s ease both;
