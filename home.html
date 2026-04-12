@@ -97,7 +97,7 @@
     <div class="services-grid">
 
       <!-- Service Card 1 -->
-      <div class="service-card">
+      <div class="service-card" data-service="general" onclick="openServiceModal('general')">
         <div class="service-icon">📝</div>
         <h3 class="service-title">General Notarization</h3>
         <p class="service-description">Acknowledgments, jurats, oaths, and affirmations for personal and business documents.</p>
@@ -108,10 +108,11 @@
           <li>Oaths & Affirmations</li>
           <li>Copy Certifications</li>
         </ul>
+        <button class="service-btn">Learn More</button>
       </div>
 
       <!-- Service Card 2 -->
-      <div class="service-card featured">
+      <div class="service-card featured" data-service="mobile" onclick="openServiceModal('mobile')">
         <div class="service-badge">Most Popular</div>
         <div class="service-icon">🚗</div>
         <h3 class="service-title">Mobile Notary</h3>
@@ -123,10 +124,11 @@
           <li>Hospital & care facilities</li>
           <li>20-mile service radius</li>
         </ul>
+        <button class="service-btn">Learn More</button>
       </div>
 
       <!-- Service Card 3 -->
-      <div class="service-card">
+      <div class="service-card" data-service="ron" onclick="openServiceModal('ron')">
         <div class="service-icon">💻</div>
         <h3 class="service-title">Remote Online Notarization</h3>
         <p class="service-description">Secure video notarization from anywhere in Oregon. Fast, convenient, legally valid.</p>
@@ -137,10 +139,11 @@
           <li>Electronic documents</li>
           <li>Fast turnaround</li>
         </ul>
+        <button class="service-btn">Learn More</button>
       </div>
 
       <!-- Service Card 4 -->
-      <div class="service-card">
+      <div class="service-card" data-service="real-estate" onclick="openServiceModal('real-estate')">
         <div class="service-icon">🏠</div>
         <h3 class="service-title">Real Estate Documents</h3>
         <p class="service-description">Deeds, mortgages, refinances, and other property-related notarizations.</p>
@@ -151,10 +154,11 @@
           <li>Property transfers</li>
           <li>Refinance paperwork</li>
         </ul>
+        <button class="service-btn">Learn More</button>
       </div>
 
       <!-- Service Card 5 -->
-      <div class="service-card">
+      <div class="service-card" data-service="loan" onclick="openServiceModal('loan')">
         <div class="service-icon">📋</div>
         <h3 class="service-title">Loan Signings</h3>
         <p class="service-description">Complete loan signing packages for mortgages, refinances, and HELOCs.</p>
@@ -165,10 +169,11 @@
           <li>HELOC documents</li>
           <li>Seller packages</li>
         </ul>
+        <button class="service-btn">Learn More</button>
       </div>
 
       <!-- Service Card 6 -->
-      <div class="service-card">
+      <div class="service-card" data-service="legal" onclick="openServiceModal('legal')">
         <div class="service-icon">⚖️</div>
         <h3 class="service-title">Legal Documents</h3>
         <p class="service-description">Power of attorney, wills, affidavits, and other legal paperwork.</p>
@@ -179,6 +184,7 @@
           <li>Declarations</li>
           <li>Consent forms</li>
         </ul>
+        <button class="service-btn">Learn More</button>
       </div>
 
     </div>
@@ -422,6 +428,50 @@
   ↑
 </button>
 
+<!-- Service Modal -->
+<div id="serviceModal" class="modal">
+  <div class="modal-overlay" onclick="closeServiceModal()"></div>
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeServiceModal()" aria-label="Close modal">&times;</button>
+
+    <div class="modal-header">
+      <span class="modal-icon" id="modalIcon"></span>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <div class="modal-price" id="modalPrice"></div>
+    </div>
+
+    <div class="modal-body">
+      <p class="modal-description" id="modalDescription"></p>
+
+      <div class="modal-section">
+        <h3>What's Included:</h3>
+        <ul id="modalIncluded"></ul>
+      </div>
+
+      <div class="modal-section">
+        <h3>What You'll Need:</h3>
+        <ul id="modalNeeds"></ul>
+      </div>
+
+      <div class="modal-section">
+        <h3>Common Uses:</h3>
+        <p id="modalUses"></p>
+      </div>
+
+      <div class="modal-section" id="modalTimeSection">
+        <h3>Estimated Time:</h3>
+        <p id="modalTime"></p>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn btn-primary" onclick="selectService()">Select This Service</button>
+      <button class="btn btn-secondary" onclick="closeServiceModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
 <script src="assets/js/main.js"></script>
+<script src="assets/js/service-modals.js"></script>
 </body>
 </html>

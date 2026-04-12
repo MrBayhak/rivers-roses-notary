@@ -1,0 +1,17 @@
+# Netlify Build Configuration
+
+[build]
+  publish = "."
+  command = "echo 'No build needed - static site'"
+
+# Only deploy from main branch
+[context.production]
+  branch = "main"
+
+# Ignore all other branches (saves build minutes)
+[context.branch-deploy]
+  skip_builds = true
+
+# Don't build pull requests
+[context.deploy-preview]
+  skip_builds = true
