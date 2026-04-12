@@ -938,6 +938,41 @@ section:nth-child(even) {
 }
 
 /* ========================================
+   Professional Icon Styling
+   ======================================== */
+.service-icon i {
+  color: #b8955a;
+  font-size: 2.5rem;
+  display: block;
+}
+
+.service-card:hover .service-icon i {
+  color: #a8324a;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.feature-icon i {
+  color: #b8955a;
+  font-size: 1.25rem;
+}
+
+.contact-icon i {
+  color: #b8955a;
+  font-size: 2rem;
+}
+
+.modal-icon i {
+  color: #b8955a;
+  font-size: 3.5rem;
+}
+
+.placeholder-content h3 i {
+  color: #b8955a;
+  margin-right: 0.5rem;
+}
+
+/* ========================================
    Service Card Button
    ======================================== */
 .service-btn {

@@ -6,7 +6,7 @@
 // Service Data with detailed information
 const serviceData = {
   'general': {
-    icon: '📝',
+    icon: '<i class="fa-solid fa-file-signature"></i>',
     title: 'General Notarization',
     price: '$15',
     priceDetail: 'per signature',
@@ -29,7 +29,7 @@ const serviceData = {
   },
 
   'mobile': {
-    icon: '🚗',
+    icon: '<i class="fa-solid fa-house-user"></i>',
     title: 'Mobile Notary Service',
     price: '$50',
     priceDetail: '$15 per signature + $35 travel fee',
@@ -53,7 +53,7 @@ const serviceData = {
   },
 
   'ron': {
-    icon: '💻',
+    icon: '<i class="fa-solid fa-video"></i>',
     title: 'Remote Online Notarization (RON)',
     price: '$40',
     priceDetail: 'per session',
@@ -78,7 +78,7 @@ const serviceData = {
   },
 
   'real-estate': {
-    icon: '🏠',
+    icon: '<i class="fa-solid fa-building"></i>',
     title: 'Real Estate Documents',
     price: '$15',
     priceDetail: 'per signature',
@@ -103,7 +103,7 @@ const serviceData = {
   },
 
   'loan': {
-    icon: '📋',
+    icon: '<i class="fa-solid fa-file-contract"></i>',
     title: 'Loan Signing Services',
     price: '$125',
     priceDetail: 'flat rate',
@@ -128,7 +128,7 @@ const serviceData = {
   },
 
   'legal': {
-    icon: '⚖️',
+    icon: '<i class="fa-solid fa-scale-balanced"></i>',
     title: 'Legal Documents',
     price: '$15',
     priceDetail: 'per signature',
@@ -166,7 +166,7 @@ function openServiceModal(serviceId) {
   selectedService = serviceId;
 
   // Populate modal content
-  document.getElementById('modalIcon').textContent = service.icon;
+  document.getElementById('modalIcon').innerHTML = service.icon;
   document.getElementById('modalTitle').textContent = service.title;
   document.getElementById('modalPrice').innerHTML = `${service.price} <span>${service.priceDetail}</span>`;
   document.getElementById('modalDescription').textContent = service.description;

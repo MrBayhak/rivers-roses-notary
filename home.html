@@ -14,6 +14,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="assets/css/styles.css"/>
 <link rel="stylesheet" href="assets/css/home.css"/>
 </head>
@@ -71,15 +72,15 @@
 
     <div class="hero-features">
       <div class="feature-item">
-        <span class="feature-icon">📱</span>
+        <span class="feature-icon"><i class="fa-solid fa-car"></i></span>
         <span>Mobile Service</span>
       </div>
       <div class="feature-item">
-        <span class="feature-icon">💻</span>
+        <span class="feature-icon"><i class="fa-solid fa-laptop"></i></span>
         <span>Remote Online</span>
       </div>
       <div class="feature-item">
-        <span class="feature-icon">🌙</span>
+        <span class="feature-icon"><i class="fa-solid fa-clock"></i></span>
         <span>Evening Hours</span>
       </div>
     </div>
@@ -98,7 +99,7 @@
 
       <!-- Service Card 1 -->
       <div class="service-card" data-service="general" onclick="openServiceModal('general')">
-        <div class="service-icon">📝</div>
+        <div class="service-icon"><i class="fa-solid fa-file-signature"></i></div>
         <h3 class="service-title">General Notarization</h3>
         <p class="service-description">Acknowledgments, jurats, oaths, and affirmations for personal and business documents.</p>
         <div class="service-price">$15 <span>per signature</span></div>
@@ -114,7 +115,7 @@
       <!-- Service Card 2 -->
       <div class="service-card featured" data-service="mobile" onclick="openServiceModal('mobile')">
         <div class="service-badge">Most Popular</div>
-        <div class="service-icon">🚗</div>
+        <div class="service-icon"><i class="fa-solid fa-house-user"></i></div>
         <h3 class="service-title">Mobile Notary</h3>
         <p class="service-description">We come to you! Home, office, hospital, or care facility within 20 miles.</p>
         <div class="service-price">$15 + $35 <span>per signature + travel</span></div>
@@ -129,7 +130,7 @@
 
       <!-- Service Card 3 -->
       <div class="service-card" data-service="ron" onclick="openServiceModal('ron')">
-        <div class="service-icon">💻</div>
+        <div class="service-icon"><i class="fa-solid fa-video"></i></div>
         <h3 class="service-title">Remote Online Notarization</h3>
         <p class="service-description">Secure video notarization from anywhere in Oregon. Fast, convenient, legally valid.</p>
         <div class="service-price">$40 <span>per session</span></div>
@@ -144,7 +145,7 @@
 
       <!-- Service Card 4 -->
       <div class="service-card" data-service="real-estate" onclick="openServiceModal('real-estate')">
-        <div class="service-icon">🏠</div>
+        <div class="service-icon"><i class="fa-solid fa-building"></i></div>
         <h3 class="service-title">Real Estate Documents</h3>
         <p class="service-description">Deeds, mortgages, refinances, and other property-related notarizations.</p>
         <div class="service-price">$15 <span>per signature</span></div>
@@ -159,7 +160,7 @@
 
       <!-- Service Card 5 -->
       <div class="service-card" data-service="loan" onclick="openServiceModal('loan')">
-        <div class="service-icon">📋</div>
+        <div class="service-icon"><i class="fa-solid fa-file-contract"></i></div>
         <h3 class="service-title">Loan Signings</h3>
         <p class="service-description">Complete loan signing packages for mortgages, refinances, and HELOCs.</p>
         <div class="service-price">$125 <span>flat rate</span></div>
@@ -174,7 +175,7 @@
 
       <!-- Service Card 6 -->
       <div class="service-card" data-service="legal" onclick="openServiceModal('legal')">
-        <div class="service-icon">⚖️</div>
+        <div class="service-icon"><i class="fa-solid fa-scale-balanced"></i></div>
         <h3 class="service-title">Legal Documents</h3>
         <p class="service-description">Power of attorney, wills, affidavits, and other legal paperwork.</p>
         <div class="service-price">$15 <span>per signature</span></div>
@@ -277,7 +278,7 @@
         <!-- Calendly Integration Placeholder -->
         <div class="calendly-placeholder">
           <div class="placeholder-content">
-            <h3>📅 Schedule Your Appointment</h3>
+            <h3><i class="fa-solid fa-calendar-check"></i> Schedule Your Appointment</h3>
             <p>To activate online booking, add your Calendly embed code to <code>assets/js/main.js</code></p>
             <p class="placeholder-note">Instructions provided in the JavaScript file.</p>
             <a href="mailto:info@riversandrosesnotary.com" class="btn btn-primary">Email to Schedule</a>
@@ -302,7 +303,7 @@
     <div class="contact-content">
       <div class="contact-info">
         <div class="contact-item">
-          <div class="contact-icon">📧</div>
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
           <div class="contact-details">
             <h4>Email</h4>
             <a href="mailto:info@riversandrosesnotary.com">info@riversandrosesnotary.com</a>
@@ -310,7 +311,7 @@
         </div>
 
         <div class="contact-item">
-          <div class="contact-icon">📍</div>
+          <div class="contact-icon"><i class="fa-solid fa-map-marker-alt"></i></div>
           <div class="contact-details">
             <h4>Service Area</h4>
             <p>Portland & surrounding areas<br/>20-mile mobile service radius</p>
@@ -318,7 +319,7 @@
         </div>
 
         <div class="contact-item">
-          <div class="contact-icon">⏰</div>
+          <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
           <div class="contact-details">
             <h4>Hours</h4>
             <p>Monday - Thursday: Evenings<br/>Other times by appointment</p>
