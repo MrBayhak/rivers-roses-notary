@@ -2,6 +2,25 @@
    Rivers & Roses Notary - Home Page Styles
    ======================================== */
 
+/* Override base body styles for multi-section layout */
+body {
+  display: block !important;
+  align-items: initial !important;
+  justify-content: initial !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+/* Ensure all containers don't cause horizontal overflow */
+* {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Navigation */
 .nav {
   position: fixed;
@@ -108,7 +127,13 @@
 
 /* Hero Section Adjustments */
 .hero {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
   padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-tagline {
@@ -194,7 +219,10 @@
 
 /* Section Styles */
 section {
+  display: block;
+  width: 100%;
   padding: 5rem 2rem;
+  position: relative;
 }
 
 section:nth-child(even) {
